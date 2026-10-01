@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Aniversários • Cibersistemas</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header>
+
+
+
+    <h1>Aniversários da Turma</h1>
+
+    <p>
+        Cibersistemas para Automação • SENAI
+    </p>
+
+</header>
+
+
+<main>
+
+    <section class="calendario">
+
+        <div class="navegacao">
+
+            <button id="mes-anterior" aria-label="Mês anterior">
+                ←
+            </button>
+
+            <div class="titulo-mes">
+                <span class="indicador"></span>
+
+                <h2 id="mes-atual">
+                    Janeiro
+                </h2>
+            </div>
+
+            <button id="proximo-mes" aria-label="Próximo mês">
+                →
+            </button>
+
+        </div>
+
+
+        <div class="dias-semana">
+
+            <span>Dom</span>
+            <span>Seg</span>
+            <span>Ter</span>
+            <span>Qua</span>
+            <span>Qui</span>
+            <span>Sex</span>
+            <span>Sáb</span>
+
+        </div>
+
+
+        <div id="calendario" class="dias"></div>
+
+    </section>
+
+
+    <section class="aniversarios">
+
+        <div class="titulo-aniversarios">
+
+            <span class="linha-titulo"></span>
+
+            <div>
+                <h2>Aniversários</h2>
+                <p>Datas da turma</p>
+            </div>
+
+        </div>
+
+        <div id="lista-aniversarios"></div>
+
+    </section>
+
+</main>
+
+
+<div id="modal-aniversario" class="modal">
+
+    <div class="modal-linha linha-1"></div>
+    <div class="modal-linha linha-2"></div>
+
+    <div class="modal-conteudo">
+
+        <button
+            id="fechar-modal"
+            aria-label="Fechar"
+        >
+            ×
+        </button>
+
+        <div class="bolo">
+            🎂
+        </div>
+
+        <span class="texto-aniversario">
+            ANIVERSÁRIO
+        </span>
+
+        <h2 id="nome-aniversariante">
+            Feliz aniversário!
+        </h2>
+
+        <p>
+            Que seu dia seja incrível! 🎉
+        </p>
+
+    </div>
+
+</div>
+
+
+<div id="confetes"></div>
+
+
+<footer>
+
+    <div class="linha-footer"></div>
+
+    <p>
+        CIBERSISTEMAS PARA AUTOMAÇÃO • SENAI
+    </p>
+
+</footer>
+
+
+<script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
